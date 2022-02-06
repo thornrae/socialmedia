@@ -2,15 +2,22 @@
   "name": "socialmediaapp",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "nodemon server.js",
     "build": "next build",
-    "start": "next start",
+    "start": "NODE_ENV=production node server.js",
     "lint": "next lint"
   },
   "dependencies": {
-    "next": "12.0.10",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.2",
+    "mongoose": "^6.2.0",
+    "next": "^12.0.10",
+    "nodemon": "^2.0.15",
+    "nprogress": "^0.2.0",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "semantic-ui-css": "^2.4.1",
+    "semantic-ui-react": "^2.1.1"
   },
   "devDependencies": {
     "eslint": "8.8.0",
